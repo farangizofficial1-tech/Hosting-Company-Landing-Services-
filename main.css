@@ -1,0 +1,1656 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+.nav-links a {
+  text-decoration: none;
+  display: flex; /* GORIZONTAL joylash */
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+
+
+.cart-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
+  background: linear-gradient(to right, #007bff, #00bfff);
+  color: white;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-left h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hero-right {
+  width: 45%;
+  text-align: right;
+}
+
+.hero-right img {
+  max-width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Oqish rangli orqa fon */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Gorizontal scrollni oldini olish */
+}
+
+/* Yuqoridagi holat paneli (status bar) uchun stil */
+header {
+    /* Bu qism rasmda ko'rsatilgan holat panelini aks ettirish uchun joy. */
+    /* Agar to'liq replikatsiya qilish kerak bo'lsa, bu yerga ikonka va matnlar qo'shilishi mumkin. */
+    width: 100%;
+    height: 20px; /* Misol uchun balandlik */
+    background-color: transparent; /* Fon rangini shaffof qilish */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-top: 0; /* Yuqoridagi bo'shliqni yo'qotish */
+}
+
+/* Yuqoridagi ko'k to'lqin shakli */
+.top-wave {
+    width: 100%;
+    height: 120px; /* To'lqin balandligi */
+    background-color: #3f51b5; /* Ko'k rang */
+    border-bottom-left-radius: 50% 20px; /* Chap pastki burchakni yumaloq qilish */
+    border-bottom-right-radius: 50% 20px; /* O'ng pastki burchakni yumaloq qilish */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.domain-list-section {
+    position: relative;
+    z-index: 2; /* Domennomlari to'lqin ustida turishi uchun */
+    margin-top: 60px; /* To'lqindan pastroqda joylashish uchun */
+    width: 90%;
+    max-width: 300px; /* Kichikroq ekranlar uchun maksimal kenglik */
+    background-color: transparent; /* Orqa fonni shaffof qilish */
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.domain-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background-color: transparent; /* Orqa fonni shaffof qilish */
+    color: #333; /* Matn rangi */
+}
+
+.domain-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.domain-price {
+    font-size: 16px;
+    color: #666;
+    margin-left: 10px;
+}
+
+.services-section {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 50px; /* Domennomlari ro'yxatidan keyin bo'shliq */
+    padding: 20px;
+    background-color: #ffffff; /* Oq orqa fon */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.services-heading {
+    color: #ff9800; /* To'q sariq rang */
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.services-description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: left; /* Chap tomonga tekislash */
+}
+
+.all-services-button {
+    background-color: #007bff; /* Ko'k rang */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* To'liq kenglik */
+    max-width: 250px; /* Maksimal kenglikni cheklash */
+    font-weight: bold;
+}
+
+.all-services-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffffff; /* Oq orqa fon */
+    border-top: 1px solid #e0e0e0;
+    position: sticky; /* Pastga yopishib turish */
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px; /* Pastki qism balandligi */
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Yuqoridagi soya */
+}
+
+.bottom-triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid #ff9800; /* To'q sariq uchburchak */
+    margin-bottom: 15px; /* Pastki navigatsiya bilan orasi */
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around; /* Elementlarni teng taqsimlash */
+    align-items: center;
+    width: 80%; /* Pastki navigatsiyaning kengligi */
+    max-width: 300px;
+}
+
+.bottom-nav-item {
+    width: 30px; /* Navigatsiya indikatorlari hajmi */
+    height: 30px;
+    /* Bu yerda indikatorlar uchun ikonka yoki oddiy shakllar bo'lishi mumkin */
+    /* Hozircha joy saqlovchi (placeholder) */
+    background-color: #ccc; /* Kulrang rang */
+    border-radius: 50%; /* Dumaloq shakl */
+    display: none;
+}
+
+/* Mobil qurilmalar uchun moslashuvchanlik (ixtiyoriy, lekin yaxshi amaliyot) */
+@media (max-width: 600px) {
+    .top-wave {
+        height: 100px;
+    }
+
+    .domain-name {
+        font-size: 20px;
+    }
+
+    .domain-price {
+        font-size: 14px;
+    }
+
+    .services-heading {
+        font-size: 12px;
+    }
+
+    .services-description {
+        font-size: 14px;
+    }
+
+    .all-services-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .bottom-triangle {
+        border-bottom: 20px solid #ff9800;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif; /* Asosiy shrift */
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5; /* Yengil fon rangi */
+    display: flex; /* Elementlarni markazga joylashtirish uchun */
+    flex-direction: column; /* Vertikal joylashish */
+    align-items: center; /* Gorizontal markazlashtirish */
+    justify-content: center; /* Vertikal markazlashtirish (agar sahifa balandligi kichik bo'lsa) */
+    min-height: 100vh; /* Sahifaning kamida 100% balandligini egallash */
+}
+
+/* ALL SERVICES tugmasi uchun uslublar */
+.top-section {
+    width: 100%;
+    max-width: 400px; /* Qismning maksimal kengligi */
+    text-align: center;
+    margin-bottom: 30px; /* Pastdan biroz joy qoldirish */
+}
+
+.all-services-button {
+    background-color: #007bff; /* Moviy rang */
+    color: white; /* Oq matn */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px; /* Yumaloq burchaklar */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Rang o'zgarishi animatsiyasi */
+}
+
+.all-services-button:hover {
+    background-color: #0056b3; /* Hoverda biroz to'qroq rang */
+}
+
+
+/* "Uptime Guarantee" bo'limi uchun uslublar (feature-box) */
+.feature-box {
+    background-color: white; /* Oq fon */
+    border-radius: 8px; /* Yumaloq burchaklar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Yengil soya */
+    padding: 30px;
+    margin: 20px;
+    text-align: center; /* Ichidagi matn va elementlarni markazga joylash */
+    max-width: 400px; /* Maksimal kenglik */
+    width: 100%; /* Kichik ekranlar uchun to'liq kenglik */
+    box-sizing: border-box; /* Padding va border kenglikka qo'shiladi */
+}
+
+.feature-icon {
+    margin-bottom: 20px;
+    /* Rasmda ko'rsatilgan ikonkaning o'rniga joylashtirilgan rasm uchun uslublar */
+    /* Agar siz ikonka rasmini yuklagan bo'lsangiz, uni shu yerga joylashtiring. */
+}
+
+.feature-title {
+    font-size: 24px;
+    color: #333; /* To'q kulrang matn */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.feature-description {
+    font-size: 16px;
+    color: #666; /* Kulrangroq matn */
+    line-height: 1.6; /* Matn qatorlari orasidagi masofa */
+    margin-bottom: 20px;
+}
+
+.feature-link {
+    color: #007bff; /* Moviy rang */
+    text-decoration: none; /* Tagidagi chiziqni olib tashlash */
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-flex; /* Tugma va o'q bir qatorda bo'lishi uchun */
+    align-items: center; /* Vertikal markazlashtirish */
+}
+
+.feature-link:hover {
+    text-decoration: underline; /* Hoverda tagida chiziq paydo bo'lishi */
+}
+
+.feature-link .arrow {
+    margin-left: 5px; /* O'q bilan matn orasidagi masofa */
+    font-size: 18px; /* O'qning kattaligi */
+}
+
+/* General styling for the page */
+.page-container {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; /* Ensures content takes at least full viewport height */
+}
+
+/* Container for the main content */
+.content-wrapper {
+    background-color: #ffffff;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section for "OUR FEATURES" */
+.features-section .heading-orange {
+    color: #ff6600; /* Orange color for "OUR FEATURES" */
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Heading for "Enjoy Preconfigured Setups or Full Control" */
+.features-section .main-title {
+    font-size: 1.8em;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Paragraph text styling */
+.features-section .description-text {
+    color: #666666;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Image styling */
+.image-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes extra space below image */
+    margin: 0 auto; /* Centers the image */
+}
+
+.feature-text p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* --- Pastki navigatsiya (Pastki qoramtir panel) --- */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around; /* Elementlar orasida teng bo'sh joy */
+    align-items: center;
+    background-color: #333; /* Qora fon */
+    height: 45px; /* Balandligi */
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 5px; /* Pastki chiziqdan biroz bo'sh joy */
+}
+
+.bottom-nav i {
+    cursor: pointer;
+    opacity: 0.7; /* Bir oz shaffoflik */
+}
+
+.bottom-nav .active {
+    color: #fff; /* Faol element oq */
+    opacity: 1;
+    font-size: 12px; /* Doira ikona kichikroq */
+}
+
+/* Umumiy uslublar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed; /* Rasmdagi kabi yuqorida turishi uchun */
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-weight: bold;
+    color: #333;
+}
+
+main {
+    margin-top: 100px; /* Header balandligini hisobga olgan holda */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pricing-section {
+    text-align: center;
+    max-width: 960px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.hosting-plan {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 350px; /* Rasmdagi kartaning kengligiga moslash */
+    margin: 0 auto; /* O'rtaga joylash */
+}
+
+.plan-type {
+    font-size: 1.5em;
+    color: #f39c12; /* To'q sariq rang */
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.price .currency {
+    font-size: 0.6em;
+    margin-right: 5px;
+}
+
+.price .period {
+    font-size: 0.4em;
+    margin-left: 5px;
+    color: #666;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    position: relative;
+    padding-left: 25px; /* Bullet uchun joy */
+}
+
+.features li:last-child {
+    border-bottom: none;
+}
+
+.features li::before {
+    content: "\2022"; /* Bullet nuqtasi */
+    color: #f39c12; /* To'q sariq rang */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+.get-started-btn {
+    background-color: #f39c12; /* To'q sariq rang */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #e67e22; /* To'qroq to'q sariq */
+}
+
+/* Kichik ekranlar uchun adaptatsiya (mobil ko'rinish) */
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 1.5em;
+    }
+
+    .hosting-plan {
+        padding: 20px;
+    }
+
+    .price {
+        font-size: 2.5em;
+    }
+
+    .get-started-btn {
+        padding: 12px 25px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5; /* Eng pastki fon rangi */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sahifani to'liq balandlikda ushlab turish */
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 600px; /* Tasvirdagi kenglikka yaqinroq bo'lishi uchun */
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Kontentni yuqoriga surish */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.back-arrow {
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #666;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.menu-dots {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #666;
+}
+
+.
+
+
+
+.file-management-section {
+    padding: 20px;
+}
+
+.section-title {
+    color: #ff6f61; /* Qizil-to'q sariq rang */
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.main-heading {
+    font-size: 1.8em;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start; /* Ikonkalar va matn tepaga tekislanishi uchun */
+    margin-bottom: 25px;
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px; /* Yumaloq burchaklar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+.cloud-icon {
+    background-color: #72b2e8; /* Moviy rang */
+}
+
+.server-icon {
+    background-color: #f7b055; /* To'q sariq rang */
+}
+
+.search-icon {
+    background-color: #5dc2a8; /* Yashil rang */
+}
+
+.text-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.text-content p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.footer-nav {
+    background-color: #f9f9f9; /* Tasvirga mos keladigan kulrang fon */
+    height: 50px; /* Pastki navigatsiya paneli balandligi */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: sticky; /* Ekranning pastki qismiga yopishishi uchun */
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05); /* Yengil soya */
+}
+
+/* Telefon ekranlari uchun javob beruvchanlik */
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+        box-shadow: none;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Yengil fon */
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.card-section {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Kartaning maksimal kengligi */
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Chegaradan chiqib ketmasligi uchun */
+}
+
+.illustration-area {
+    width: 100%;
+    height: auto; /* Rasmni o'z nisbatlarida ushlab turish */
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-illustration {
+    max-width: 100%; /* Rasmning ota elementiga sig'ishi */
+    height: auto;
+    display: block; /* Rasm ostidagi bo'sh joyni yo'qotadi */
+    border-radius: 10px; /* Agar rasm o'tkir qirrali bo'lsa, biroz yumshoqroq ko'rinish beradi */
+    /* Rasmni biroz kattaroq qilish uchun: */
+    /* transform: scale(1.05); */
+    /* transition: transform 0.3s ease; */
+}
+
+/* Agar illustration-area ichida boshqa elementlar bo'lishi kerak bo'lsa, ularga ham mos ravishda joy berish kerak.
+   Lekin sizning holatingizda faqat bitta rasm bo'lgani uchun, shu yerga joylashtirildi. */
+
+
+.learn-more-button {
+    padding: 15px 35px;
+    background-color: #3498db; /* Ko'k tugma rangi */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    outline: none; /* Fokusda ko'rinadigan chiziqni olib tashlaydi */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Tugma uchun soya */
+}
+
+.learn-more-button:hover {
+    background-color: #2980b9; /* Hoverda to'qroq ko'k */
+    transform: translateY(-3px); /* Hoverda biroz yuqoriga ko'tariladi */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.learn-more-button:active {
+    background-color: #2c77a9;
+    transform: translateY(0); /* Bosilganda joyiga qaytadi */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivlik uchun qo'shimcha CSS */
+@media (max-width: 768px) {
+    .card-section {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .learn-more-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-section {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .learn-more-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+.container {
+    flex-grow: 1; /* Allows container to take remaining height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content to the top within the container */
+    padding: 20px;
+    background: linear-gradient(to bottom, #FFC107 0%, #FFA000 70%, #f0f2f5 100%); /* Orange gradient */
+    position: relative; /* For the wave effect */
+    overflow: hidden; /* Hide overflowing parts of the wave */
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    bottom: -50px; /* Adjust to move the wave up/down */
+    left: 0;
+    width: 100%;
+    height: 100px; /* Height of the wave */
+    background: #f0f2f5; /* Color of the area below the wave */
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0; /* Creates the wave shape */
+    transform: translateY(50%); /* Adjust to move the wave */
+    z-index: 0; /* Ensure it's behind the content */
+}
+
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.0); /* Transparent background for the text box */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    color: #fff; /* White text for content */
+    z-index: 1; /* Ensure content is above the wave */
+}
+
+.content-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.content-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for paragraph */
+}
+
+.live-chat-button {
+    background-color: #334455; /* Dark blue/gray as seen in the image */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.live-chat-button:hover {
+    background-color: #445566; /* Slightly lighter on hover */
+} 
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; /* General body text font */
+    background-color: #f8f8f8; /* Light background for the page */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full viewport height */
+}
+
+/* Header styling - consistent with previous designs */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #333;
+    font-size: 14px;
+}
+
+.header .back-button {
+    font-size: 24px;
+    color: #777;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.header .title {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.header .domain {
+    color: #666;
+    flex-grow: 1; /* Pushes menu-icon to the right */
+}
+
+.header .menu-icon {
+    font-size: 24px;
+    color: #777;
+    text-decoration: none;
+}
+
+/* Main content section styling */
+.main-content-section {
+    flex-grow: 1; /* Allows this section to take remaining vertical space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically for mobile */
+    align-items: center; /* Center items horizontally */
+    max-width: 800px; /* Max width for content on larger screens */
+    margin: 0 auto; /* Center the main content block */
+    background-color: #fff; /* White background for the content area */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Optional: subtle shadow for the content block */
+}
+
+.illustration-container {
+    width: 100%;
+    max-width: 450px; /* Adjust based on your illustration's ideal width */
+    margin-bottom: 30px; /* Space between illustration and text */
+    /* Add any specific background/shapes for the illustration section if needed,
+       though the image implies the shape is part of the illustration itself. */
+}
+
+.illustration-image {
+    max-width: 100%; /* Ensures the image scales down on smaller screens */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below the image */
+    margin: 0 auto; /* Center the image if its container is wider */
+}
+
+.text-block {
+    text-align: left; /* Align text to the left as in the image */
+    width: 100%;
+    padding: 0 15px; /* Add some horizontal padding for text */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.label {
+    font-size: 0.9em;
+    color: #FFA500; /* Orange color for the label */
+    font-weight: 600;
+    margin-bottom: 5px; /* Space between label and heading */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-block h2 {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for heading */
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.text-block .description {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0;
+}
+
+/* Optional: Media query for larger screens if you want different layouts */
+@media (min-width: 768px) {
+    .main-content-section {
+        padding: 40px; /* More padding on larger screens */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Or white if preferred */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #333;
+    font-size: 14px;
+    border-bottom: 1px solid #eee; /* Added a subtle border for separation */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.close-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.page-title {
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+
+.url {
+    margin-right: 10px;
+    color: #666;
+}
+
+.arrow-down, .dots {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1; /* Allows content to take up available space */
+}
+
+.feature-list {
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkmark {
+    color: #4CAF50; /* Green checkmark color */
+    font-size: 20px;
+    margin-right: 15px;
+    background-color: #E8F5E9; /* Light green background for checkmark */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.feature-item p {
+    margin: 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+.click-here-button {
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Make it a block element to center with margin auto */
+    margin: 0 auto 40px auto; /* Center the button and add bottom margin */
+    width: fit-content; /* Adjust width to content */
+    text-transform: uppercase;
+}
+
+.click-here-button:hover {
+    background-color: #0056b3;
+}
+
+.testimonials-section {
+    text-align: center;
+    margin-top: 40px; /* Add some space from the button */
+}
+
+.testimonials-title {
+    color: #ff9800; /* Orange color for "WHAT THEY'RE SAYING" */
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.testimonials-heading {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.footer-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    /* Position fixed to stick to the bottom */
+    position: sticky; /* or fixed, depending on desired behavior */
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #eee; /* Added a subtle border for separation */
+}
+
+.footer-icon {
+    /* Placeholder for footer icons */
+    width: 30px;
+    height: 30px;
+    background-color: #ccc; /* Temporary background to show icon area */
+    border-radius: 50%;
+}
+
+/* For smaller screens, adjust padding if needed */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    .url {
+        display: none; /* Hide URL on very small screens if it takes too much space */
+    }
+    .page-title {
+        font-size: 16px;
+    }
+    .testimonials-heading {
+        font-size: 20px;
+    }
+}
+
+/* Testimonial Cards Section */
+.testimonial-card-container {
+    padding: 20px;
+    display: flex; /* Agar yonma-yon kartalar bo'lsa */
+    flex-direction: column; /* Kartalar ustma-ust bo'lishi uchun */
+    align-items: center; /* Kartalarni markazga joylash uchun */
+    gap: 20px; /* Kartalar orasidagi bo'sh joy */
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Yumshoqroq soya */
+    padding: 60px 25px 25px 25px; /* Yuqori padding rasmni joylashtirish uchun */
+    text-align: center;
+    position: relative;
+    max-width: 400px; /* Karta kengligini cheklash */
+    width: 100%; /* Mobil uchun to'liq kenglik */
+    margin-bottom: 20px; /* Kartalar orasidagi bo'sh joy */
+    overflow: hidden; /* Kontent tashqariga chiqmasligi uchun */
+}
+
+
+
+
+
+.testimonial-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    margin-top: 15px; /* Matn rasmdan keyin boshlanishi uchun */
+    position: relative; /* Pastki chegara uchun */
+    padding-bottom: 20px; /* Pastki chegara va matn orasidagi bo'sh joy */
+}
+
+
+
+
+.author-info {
+    margin-top: 15px;
+    position: relative; /* Z-index ni boshqarish uchun */
+    z-index: 1; /* Matn ustida bo'lishi uchun */
+}
+
+.author-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.author-title {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+/* Kichik ekranlar uchun moslashuvchanlik */
+@media (max-width: 600px) {
+    .testimonial-card {
+        padding: 50px 20px 20px 20px;
+        max-width: 100%;
+    }
+
+  
+
+    
+
+    .testimonial-text {
+        font-size: 15px;
+    }
+
+    .author-name {
+        font-size: 16px;
+    }
+
+    .author-title {
+        font-size: 13px;
+    }
+}
+
+/* Satisfaction Guaranteed Section */
+.satisfaction-section {
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px; /* Oldingi bo'limdan biroz bo'sh joy */
+}
+
+.section-heading {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.support-card {
+    background-color: #3f51b5; /* Ko'k rang */
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 450px; /* Kartaning maksimal kengligi */
+    margin: 0 auto; /* Markazga joylashtirish */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Yaxshiroq soya */
+    text-align: left; /* Kontentni chap tomonga tekislash */
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.card-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-us-button {
+    background-color: #212121; /* Qora rang (rasmdagi kabi) */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us-button:hover {
+    background-color: #424242; /* Hover effekti */
+}
+
+/* Kichik ekranlar uchun moslashuvchanlik */
+@media (max-width: 600px) {
+    .section-heading {
+        font-size: 24px;
+    }
+
+    .support-card {
+        padding: 25px;
+        max-width: 100%; /* Kichik ekranlarda to'liq kenglik */
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-description {
+        font-size: 15px;
+    }
+
+    .contact-us-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* 30 Day Money Back Guarantee Section */
+.guarantee-section {
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px; /* Avvalgi bo'limdan biroz bo'sh joy */
+}
+
+
+.guarantee-card {
+    background: linear-gradient(135deg, #ffb300, #ffea00); /* Sariqdan och sariqqa gradient */
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 450px; /* Kartaning maksimal kengligi */
+    margin: 0 auto; /* Markazga joylashtirish */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Soya */
+    text-align: left;
+}
+
+
+.guarantee-card .card-title { /* Oldingi kartalardan farqlash uchun */
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+
+.guarantee-card .card-description { /* Oldingi kartalardan farqlash uchun */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.learn-more-button {
+    background-color: #212121; /* Qora rang */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+
+.learn-more-button:hover {
+    background-color: #424242; /* Hover effekti */
+}
+
+
+/* Kichik ekranlar uchun moslashuvchanlik */
+@media (max-width: 600px) {
+    .guarantee-section {
+        padding: 15px;
+    }
+
+
+    .guarantee-card {
+        padding: 25px;
+        max-width: 100%;
+    }
+
+
+    .guarantee-card .card-title {
+        font-size: 22px;
+    }
+
+
+    .guarantee-card .card-description {
+        font-size: 15px;
+    }
+
+
+    .learn-more-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); /* Example font */
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff; /* Default text color for the blue section */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Bar (Top part of the screen with URL and title) */
+.header-bar {
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Darker text */
+    padding: 10px 0;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-bar .container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+.header-bar .back-link {
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+}
+
+.header-bar .title {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.header-bar .url {
+    flex-grow: 1; /* Allows URL to take up available space */
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.header-bar .menu-icon {
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+    margin-left: 15px;
+}
+
+
+/* Hero Section (Blue background with wave) */
+.hero-section {
+    background: linear-gradient(to bottom, #4a90e2, #1a51a8); /* Blue gradient */
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden; /* Important for the wave */
+}
+
+.wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" fill-opacity="0.1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,96C672,64,768,64,864,80C960,96,1056,128,1152,144C1248,160,1344,160,1392,160L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>'); /* Example SVG for a wave */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.3; /* Adjust opacity of the wave */
+    transform: translateY(-50%); /* Adjust to position the wave correctly */
+}
+
+.hero-section .content {
+    position: relative; /* Ensure content is above the wave */
+    z-index: 10;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.learn-how-button {
+    background-color: #333; /* Dark button */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-how-button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #f0f0f0; /* Light grey background */
+    color: #666;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .social-icons {
+    margin-bottom: 15px;
+}
+
+.footer .social-icons a {
+    color: #666;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #333;
+}
+
+.footer p a {
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Basic Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .header-bar .url {
+        display: none; /* Hide URL on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 60px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8em;
+    }
+    .learn-how-button {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
